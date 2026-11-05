@@ -1,0 +1,1919 @@
+@font-face {
+    font-family: "Poppins";
+    font-weight: 300;
+    src: url(fonts/poppins-light-webfont.woff2) format('woff2'),
+        url(fonts/poppins-light-webfont.woff) format('woff');
+}
+
+@font-face {
+    font-family: "Poppins";
+    font-weight: 400;
+    src: url(fonts/poppins-regular-webfont.woff2) format('woff2'),
+        url(fonts/poppins-regular-webfont.woff) format('woff');
+}
+
+@font-face {
+    font-family: "Poppins";
+    font-weight: 500;
+    src: url(fonts/poppins-medium-webfont.woff2) format('woff2'),
+        url(fonts/poppins-medium-webfont.woff) format('woff');
+}
+
+@font-face {
+    font-family: "Poppins";
+    font-weight: 600;
+    src: url(fonts/poppins-semibold-webfont.woff2) format('woff2'),
+        url(fonts/poppins-semibold-webfont.woff) format('woff');
+}
+
+@font-face {
+    font-family: "Fraunces";
+    font-weight: 400;
+    src: url(fonts/Fraunces_72pt_SuperSoft-Italic.woff2) format('woff2'),
+        url(fonts/Fraunces_72pt_SuperSoft-Italic.woff) format('woff');
+}
+
+@font-face {
+    font-family: "Fraunces";
+    font-weight: 600;
+    src: url(fonts/Fraunces_72pt_SuperSoft-SemiBoldItalic.woff2) format('woff2'),
+        url(fonts/Fraunces_72pt_SuperSoft-SemiBoldItalic.woff) format('woff');
+}
+
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    background-color: #F9F8F6;
+}
+
+.navbar img {
+    width: 28px;
+}
+
+.h1-poppins-large {
+    font-family: 'Poppins', 'sans-serif';
+    font-weight: 600;
+    font-size: 5.3rem;
+    text-align: left;
+    line-height: 85%;
+    letter-spacing: -4px;
+    text-align: center;
+    color: #251B14;
+}
+
+.h1-fraunces-large {
+    font-family: "Fraunces", 'sans-serif';
+    font-weight: 300;
+    font-size: 5.8rem;
+}
+
+.h1-poppins-small {
+    color: #191614;
+    font-family: "poppins", 'sans-serif';
+    font-size: 4rem;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 100%;
+    letter-spacing: -4px;
+    text-align: left;
+}
+
+.h1-fraunces-small {
+    color: #412E21;
+    font-family: Fraunces;
+    font-size: 5rem;
+    font-weight: 400;
+    line-height: 100%;
+    letter-spacing: -4px;
+}
+
+.h2-poppins {
+    color: #191614;
+    font-family: "Poppins";
+    font-weight: 300;
+    font-size: 3rem;
+    line-height: 100%;
+    letter-spacing: -1.6px;
+}
+
+.h2-fraunces {
+    color: #191614;
+    font-family: 'Fraunces', 'sans-serif';
+    font-weight: 400;
+    font-size: 3.75rem;
+    line-height: 100%;
+    letter-spacing: -1.6px;
+}
+
+.h3-poppins-large {
+    color: #412E21;
+    font-family: 'poppins', 'sans-serif';
+    font-weight: 400;
+    font-size: 2.8rem;
+    line-height: 85%;
+    letter-spacing: -2.4px;
+}
+
+.h3-fraunces-large {
+    color: #412E21;
+    font-family: 'fraunces', 'sans-serif';
+    font-size: 3.2rem;
+    font-weight: 600;
+    line-height: 85%;
+    letter-spacing: -2.4px;
+}
+
+.h3-fraunces-large-medium {
+    color: #412E21;
+    font-family: 'fraunces', 'sans-serif';
+    font-size: 3.2rem;
+    font-weight: 500;
+    line-height: 85%;
+    letter-spacing: -2.4px;
+}
+
+.h3-poppins-small {
+    font-family: 'poppins', 'sans-serif';
+    font-weight: 500;
+    font-size: 1.25rem;
+    line-height: 110%;
+    letter-spacing: -0.8px;
+}
+
+.p-titre {
+    font-size: 1.2rem;
+}
+
+.accordeon-ui .content ul,
+.p-small,
+p {
+    color: #251B14;
+    font-family: 'poppins', 'sans-serif';
+    font-weight: 500;
+    font-size: 0.9rem;
+    line-height: 160%;
+    letter-spacing: -0.56px;
+}
+
+.p-medium-regular {
+    color: #251B14;
+    font-family: 'poppins', 'sans-serif';
+    font-weight: 400;
+    font-size: 2rem;
+    line-height: 130%;
+    letter-spacing: -1.6px;
+}
+
+.p-medium-semibold {
+    color: #251B14;
+    font-family: 'poppins', 'sans-serif';
+    font-weight: 600;
+    font-size: 2rem;
+    line-height: 130%;
+    letter-spacing: -1.6px;
+}
+
+.p-tag-fonce {
+    color: #F1EFEC;
+    font-family: 'poppins', 'sans-serif';
+    font-weight: 400;
+    font-size: 0.9rem;
+    line-height: 90%;
+    letter-spacing: -0.56px;
+    padding-top: 2px;
+}
+
+.p-tag-clair {
+    color: #251B14;
+    font-family: 'poppins', 'sans-serif';
+    font-weight: 500;
+    font-size: 0.9rem;
+    line-height: 90%;
+    letter-spacing: -0.56px;
+    padding-top: 2px;
+}
+
+.navbar {
+    position: absolute;
+    position: fixed;
+    z-index: 9999;
+    display: flex;
+    padding: 12px 40px;
+    width: max-content;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    box-sizing: border-box;
+    backdrop-filter: blur(15px);
+}
+
+.nav-links ul {
+    display: flex;
+    gap: 8px;
+    list-style: none;
+}
+
+.navbar .nav-links a {
+    text-decoration: none;
+    list-style: none;
+    font-family: "poppins", 'sans-serif';
+    font-weight: 500;
+    font-size: 0.9rem;
+    color: #191614;
+    letter-spacing: -0.56px;
+    padding: 8px 16px;
+    border-radius: 99px;
+}
+
+.navbar .nav-links a:hover {
+    border-radius: 99px;
+    background: rgba(25, 22, 20, 0.10);
+}
+
+.navbar .material-symbols-outlined {
+    display: none;
+    position: absolute;
+    top: 20px;
+    right: 20px;
+}
+
+.top-section {
+    background: url(BG-Montgolfieres.svg) #F4F3F1 45% 60% no-repeat;
+    display: flex;
+    height: 95vh;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    align-self: stretch;
+}
+
+.top-section-maxwidth {
+    display: flex;
+    flex-direction: column;
+    gap: 32px;
+}
+
+.top-section-titre {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 24px;
+}
+
+.top-section-titre p {
+    text-align: center;
+    line-height: 120%;
+}
+
+
+.bouton-secondaire {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: auto;
+    padding: 12px 20px;
+    border-radius: 99px;
+    border: 1.5px solid #251B14;
+    gap: 16px;
+    transition: 0.5s;
+    cursor: pointer;
+    text-decoration: none;
+    transition: all 0.3s ease-in-out;
+}
+
+
+.bouton-secondaire:hover {
+    background-color: #251B14;
+}
+
+.bouton-secondaire:hover p {
+    color: #F1EFEC;
+}
+
+.content-section {
+    display: flex;
+    max-width: 1440px;
+    padding-top: 90px;
+    padding-bottom: 64px;
+    margin: 0 auto;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 190px;
+}
+
+.procedure {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 48px;
+    align-self: stretch;
+}
+
+.a-propos {
+    display: flex;
+    align-items: flex-start;
+    gap: 48px;
+    align-self: stretch;
+}
+
+.tarification-title,
+.a-propos-title {
+    display: flex;
+    align-items: flex-start;
+    flex-direction: column;
+    flex: 1 0 0;
+    min-width: 280px;
+}
+
+.equipe-tab,
+.equipe {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 24px;
+    align-self: stretch;
+}
+
+.equipe-tab {
+    max-width: 1440px;
+    margin: auto;
+}
+
+.tarification,
+.financement {
+    max-width: 1440px;
+    padding: 60px 80px;
+    align-items: center;
+    gap: 32px;
+    align-self: stretch;
+    justify-content: center;
+    max-width: 1440px;
+    margin: 0 auto;
+}
+
+.equipe-tab-title,
+.rendez-vous-title,
+.equipe-title {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    flex: 1 0 0;
+}
+
+
+
+.equipe .bouton {
+    width: 100%;
+    display: flex;
+    justify-content: flex-end;
+}
+
+.equipe .bouton-secondaire {
+    margin: 0;
+}
+
+
+.color-lines {
+    display: flex;
+    width: 80px;
+    height: 2px;
+    align-items: center;
+}
+
+.color-lines-blue {
+    flex: 1 0 0;
+    align-self: stretch;
+    background: #48A3E0;
+}
+
+.color-lines-yellow {
+    flex: 1 0 0;
+    align-self: stretch;
+    background: #FAC05E;
+}
+
+.color-lines-red {
+    flex: 1 0 0;
+    align-self: stretch;
+    background: #DA4B01;
+}
+
+.sous-titre {
+    display: flex;
+    max-width: 600px;
+    color: #191614;
+    padding-top: 24px;
+}
+
+.sous-titre p {
+    text-align: center;
+}
+
+
+.rendez-vous .title,
+.equipe .title {
+    justify-content: center;
+}
+
+.rendez-vous-title .h2-poppins {
+    text-align: center;
+    color: #FFF;
+}
+
+.rendez-vous-title .h2-fraunces {
+    color: #FFF;
+}
+
+
+
+.membre-description .h3-fraunces-small {
+    color: #191614;
+    font-family: 'fraunces', 'sans-serif';
+    font-size: 40px;
+    font-style: italic;
+    font-weight: 600;
+    line-height: 107%;
+    /* 42.8px */
+    letter-spacing: -1.6px;
+}
+
+
+.title p {
+    padding: 24px 0px;
+}
+
+
+
+
+.a-propos-body {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+    max-width: 750px;
+    gap: 16px;
+}
+
+
+.equipe-body {
+    display: flex;
+    align-self: stretch;
+    gap: 16px;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.membre-background {
+    display: flex;
+    padding: 32px;
+    flex-direction: column;
+    align-items: flex-start;
+    align-self: stretch;
+
+}
+
+.membre1,
+.membre2 {
+    display: flex;
+    flex-direction: column;
+    flex: 1 0 0;
+    border-radius: 32px;
+    height: 484px;
+    min-width: 530px;
+    max-width: 800px;
+}
+
+.membre1 {
+    background: url(membre-alix-delobelle.png), #F1EFEC;
+}
+
+.membre2 {
+    background: url(membre-lucas-veronaV2.png), #F1EFEC;
+}
+
+
+.tag {
+    display: flex;
+    padding: 8px 12px;
+    justify-content: center;
+    align-items: center;
+    border-radius: 99px;
+    background: #251B14;
+}
+
+
+.tag-clair {
+    display: flex;
+    padding: 8px 12px;
+    justify-content: center;
+    align-items: center;
+    border-radius: 99px;
+    background: #F1EFEC;
+}
+
+
+
+.membre-name {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    gap: 32px;
+    padding-top: 110px;
+    flex: 1 0 0;
+    align-self: stretch;
+}
+
+.equipe-title .material-symbols-outlined,
+.membre-name .material-symbols-outlined {
+    font-size: 14px;
+    vertical-align: middle;
+    padding-right: 4px;
+}
+
+.tab .membre-name {
+    padding-top: 160px;
+}
+
+.membre-name .profil-description-coordonnees {
+    display: flex;
+    gap: 2px;
+    flex-direction: column;
+    align-self: stretch;
+}
+
+.equipe-title .profil-description-coordonnees {
+    display: flex;
+    gap: 16px;
+    align-self: center;
+    padding-top: 16px;
+}
+
+.equipe-title .profil-description-coordonnees p {
+    font-weight: 600;
+}
+
+.mail,
+.tel {
+    display: flex;
+    gap: 8px;
+}
+
+.procedure-body {
+    display: flex;
+    align-items: flex-start;
+    align-content: flex-start;
+    gap: 32px 24px;
+    align-self: stretch;
+    flex-wrap: wrap;
+}
+
+.etapier {
+    display: flex;
+    height: 300px;
+    min-width: 200px;
+    padding: 24px;
+    flex-direction: column;
+    align-items: flex-end;
+    gap: 46px;
+    flex: 1 0 0;
+    border-radius: 32px;
+    background: #F1EFEC;
+}
+
+.etapier .material-symbols-outlined {
+    font-size: 24px;
+    display: inline-block;
+    transform-origin: top right;
+    /* point fixe */
+    transition: transform 0.3s cubic-bezier(.34, 1.56, .64, 1);
+}
+
+
+.etapier-content {
+    display: flex;
+    align-self: stretch;
+    flex-direction: column;
+    gap: 16px;
+    transition: transform 0.3s cubic-bezier(.34, 1.56, .64, 1);
+}
+
+.etapier .number {
+    color: #191614;
+    font-family: 'Fraunces', 'sans-serif';
+    font-size: 48px;
+    font-weight: 400;
+    line-height: 110%;
+    /* 52.8px */
+    letter-spacing: -1.92px;
+}
+
+.h3-fiancement,
+.h3-etapier {
+    color: #191614;
+    font-family: 'poppins-medium', 'sans-serif';
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 110%;
+    /* 22px */
+    letter-spacing: -0.8px;
+}
+
+
+.etapier:hover {
+    box-shadow: 26px 28px 36px -22px rgba(25, 22, 20, 0.35);
+    transform: translateY(-2px);
+}
+
+.etapier:hover .etapier-content {
+    transform: translateY(8px);
+}
+
+.etapier:hover .material-symbols-outlined {
+    transform: scale(1.33);
+    /* 32 / 24 = 1.33 */
+}
+
+.fiancement-image {
+    min-width: 500px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    gap: 24px;
+    flex: 1 0 0;
+    align-self: stretch;
+    border-radius: 32px;
+    background: url(illustration-financement.png) lightgray 50% / cover no-repeat;
+}
+
+.rendez-vous {
+    display: flex;
+    padding: 60px 0px;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    align-self: stretch;
+
+}
+
+.rendez-vous-background {
+    display: flex;
+    padding: 60px 0px 24px 0px;
+    flex-direction: column;
+    align-self: stretch;
+    border-radius: 32px;
+    background: #251B14;
+}
+
+.calendly {
+    display: flex;
+    width: 100%;
+    margin: 0px 0px;
+}
+
+.calendly-inline-widget {
+    height: 700px;
+    width: 100%;
+}
+
+
+.tarification-body {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 24px;
+    justify-content: center;
+    padding: 24px 0;
+    width: 100%;
+}
+
+.tarif-sombre,
+.tarif-clair {
+    width: 100%;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    padding: 24px;
+    gap: 24px;
+    border-radius: 32px;
+    box-sizing: border-box;
+}
+
+
+.tarif-sombre {
+    background: #251B14;
+}
+
+.tarif-clair {
+    background: #F1EFEC;
+}
+
+.tarif-clair .tag,
+.tarif-sombre .tag-clair {
+    width: fit-content;
+}
+
+.tarif-sombre .number {
+    display: flex;
+    padding-top: 16px;
+    padding-bottom: 48px;
+    color: #F1EFEC;
+    font-family: "Fraunces", 'sans-serif';
+    font-size: 54px;
+    font-weight: 350;
+    line-height: 100%;
+    letter-spacing: -2.16px;
+    transition: transform 0.3s cubic-bezier(.34, 1.56, .64, 1);
+}
+
+.tarif-clair .number {
+    display: flex;
+    padding-top: 16px;
+    padding-bottom: 48px;
+    color: #191614;
+    font-family: "Fraunces", 'sans-serif';
+    font-size: 54px;
+    font-weight: 350;
+    line-height: 100%;
+    letter-spacing: -2.16px;
+    transition: transform 0.3s cubic-bezier(.34, 1.56, .64, 1);
+}
+
+.tarif-sombre:hover {
+    box-shadow: 22px 24px 30px -25px rgba(25, 22, 20, 0.44);
+}
+
+.tarif-clair:hover {
+    box-shadow: 22px 24px 30px -25px rgba(25, 22, 20, 0.25);
+}
+
+.tarif-sombre:hover .number,
+.tarif-clair:hover .number {
+    transform: translateY(8px);
+}
+
+.tarif-clair-description,
+.tarif-sombre-description {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+}
+
+.tarif-clair-description-detail,
+.tarif-sombre-description-detail {
+    display: flex;
+    gap: 8px;
+}
+
+.tarif-sombre-description-detail .material-symbols-outlined {
+    color: #F1EFEC;
+}
+
+.tarif-clair-description-detail .material-symbols-outlined,
+.tarif-sombre-description-detail .material-symbols-outlined {
+    scale: calc(0.9);
+}
+
+.tarif-sombre-description-detail p {
+    color: #FCFCFC;
+}
+
+
+
+.financement {
+    display: flex;
+    padding: 130px 80px 190px 80px;
+    align-items: center;
+    gap: 48px;
+    align-self: stretch;
+    max-width: 1440px;
+}
+
+.role-psychomotricien {
+    display: flex;
+    padding: 60px 80px;
+    align-items: stretch;
+    gap: 32px;
+    align-self: stretch;
+    justify-content: center;
+    max-width: 1440px;
+    margin: 0 auto;
+}
+
+.financement-text {
+    display: flex;
+    flex-direction: column;
+    padding: 0 80px 80px 0;
+    align-items: flex-start;
+    justify-content: center;
+    gap: 48px;
+    align-self: stretch;
+}
+
+.role-psychomotricien-text {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+    gap: 48px;
+    align-self: stretch;
+}
+
+.role-psychomotricien-body,
+.financement-body {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 48px;
+}
+
+.role-psychomotricien-infos,
+.financement-body-detail {
+    display: flex;
+    align-self: stretch;
+    gap: 24px;
+}
+
+.role-psychomotricien-body-detail {
+    display: flex;
+    flex-direction: column;
+    align-items: stretch;
+    gap: 24px;
+}
+
+.role-psychomotricien-text,
+.role-psychomotricien-image {
+    flex: 1;
+    width: 50%;
+}
+
+.role-psychomotricien-image {
+        display: flex;
+    overflow: hidden;
+    border-radius: 32px;
+}
+
+.role-psychomotricien-image img {
+    width: 100%;
+    height: auto;
+    display: block;
+    object-fit: cover;
+}
+
+.financement-public,
+.financement-privé {
+    display: flex;
+    flex: 1 0 0;
+    flex-direction: column;
+    gap: 16px;
+}
+
+.carte {
+    display: flex;
+    padding: 60px 60px;
+
+    flex-direction: column;
+    align-items: flex-start;
+    align-self: stretch;
+    border-radius: 32px;
+    background: url(carte.png) lightgray 50% / cover no-repeat;
+}
+
+.carte-infos {
+    display: flex;
+    padding: 24px;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 69px;
+    border-radius: 32px;
+    background: #F1EFEC;
+    box-shadow: 22px 24px 30px -25px rgba(25, 22, 20, 0.25);
+}
+
+.carte-adresse {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+}
+
+.carte-transports {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+}
+
+.transport-detail {
+    display: flex;
+    gap: 8px;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+.transport-detail img {
+    height: 24px;
+}
+
+.carte .bouton {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    align-self: stretch;
+}
+
+.carte .bouton-secondaire {
+    flex: 1 0 0;
+}
+
+
+/* Style de base du bouton */
+.button {
+    position: relative;
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: auto;
+    padding: 12px 20px;
+    border-radius: 99px;
+    background-color: #251B14;
+    gap: 16px;
+    transition: 0.5s;
+    cursor: pointer;
+    text-decoration: none;
+    z-index: 0;
+}
+
+.button span {
+    position: relative;
+    z-index: 2;
+}
+
+.button p {
+    z-index: 3;
+    color: #F1EFEC;
+    letter-spacing: 0.32px;
+}
+
+/* Carré rouge animé */
+.button::before {
+    content: "";
+    position: absolute;
+    top: 50%;
+    left: -80px;
+    width: 100px;
+    height: 300px;
+    background: linear-gradient(270deg, #DA4B01 0%, #DA4B01 33%, #FAC05E 33%, #FAC05E 66%, #48A3E0 66%, #48A3E0 100%);
+    transform: translateY(-50%) rotate(30deg);
+    opacity: 0;
+    animation: none;
+    z-index: 1;
+}
+
+/* Hover : animation aller */
+.button:hover::before {
+    opacity: 1;
+    animation: slide-bounce 2s cubic-bezier(0.22, 1.25, 0.36, 1) forwards;
+}
+
+.tab-profil .button {
+    margin: 0px;
+}
+
+.tab-profil .material-symbols-outlined {
+    font-size: 14px;
+    vertical-align: middle;
+    padding-right: 4px;
+}
+
+
+
+/* Animation gauche → droite avec effet bouncy */
+@keyframes slide-bounce {
+    0% {
+        left: -80px;
+        opacity: 1;
+    }
+
+    10% {
+        opacity: 1;
+    }
+
+    100% {
+        left: calc(110%);
+    }
+}
+
+.title-section {
+    background-color: #F9F8F6;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+    max-width: 1440px;
+    margin: 0 auto;
+    padding: 200px 80px 140px 80px;
+    gap: 0px;
+}
+
+.title {
+    display: flex;
+    align-items: flex-start;
+    align-self: stretch;
+    gap: 24px;
+}
+
+.title-h1 {
+    display: flex;
+    flex: 1 0 0;
+}
+
+.title p {
+    max-width: 414px;
+}
+
+.role-psychomotricien-infos .etapier {
+    display: flex;
+    padding: 24px;
+    height: auto;
+    flex-direction: column;
+    align-items: flex-end;
+    gap: 46px;
+    flex: 1 0 0;
+    border-radius: 32px;
+    background: #F1EFEC;
+}
+
+.role-psychomotricien-infos .etapier-content p {
+    align-self: stretch;
+}
+
+
+.motif-consultation {
+    display: flex;
+    padding: 124px 80px 140px 80px;
+    flex-direction: column;
+    gap: 32px;
+    align-items: flex-start;
+    justify-content: center;
+    max-width: 1440px;
+    margin: 0 auto;
+}
+
+.motif-enfant-ado,
+.motif-bebe {
+    display: flex;
+    align-items: flex-start;
+    gap: 16px;
+    padding-bottom: 48px;
+    padding-top: 48px;
+    border-radius: 32px;
+    border-bottom: 1px solid #E9E1D0;
+}
+
+.motif-adulte-personne-agee {
+    display: flex;
+    align-items: flex-start;
+    gap: 16px;
+    padding-bottom: 48px;
+    padding-top: 48px;
+    border-radius: 32px;
+}
+
+.motif-title {
+    width: 388px;
+    flex-shrink: 0;
+}
+
+.accordeon-ui .section {
+    position: relative;
+}
+
+.accordeon-ui input[type=radio] {
+    position: absolute;
+    right: 18px;
+    top: 14px;
+    opacity: 0;
+}
+
+.accordeon-ui {
+    position: relative;
+    display: block;
+    gap: 16px;
+}
+
+.accordeon-ui .content {
+    color: #251B14;
+    font-family: 'poppins-medium', 'sans-serif';
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 162%;
+    letter-spacing: -0.56px;
+    transition: all .3s ease-in-out;
+    padding-left: 24px;
+}
+
+.accordeon-ui .content ul {
+    list-style: disc;
+}
+
+.accordeon-ui .tag {
+    display: flex;
+    align-items: flex-start;
+    padding: 8px 20px;
+    background: #412E21;
+    color: #F1EFEC;
+    font-family: 'poppins', 'sans-serif';
+    font-weight: 500;
+    font-size: 0.9rem;
+    line-height: 160%;
+    letter-spacing: -0.56px;
+}
+
+.accordeon-tag {
+    display: flex;
+    padding-right: 16px;
+    justify-content: space-between;
+    align-items: center;
+    align-self: stretch;
+    border-radius: 999px;
+    background: #F1EFEC;
+    margin-bottom: 16px;
+}
+
+.accordeon-ui label {
+    cursor: pointer;
+    transition: all .3s ease-in-out;
+}
+
+.accordeon-ui label::before,
+.accordeon-ui label::after {
+    content: '';
+    position: absolute;
+    right: 14px;
+    top: 18px;
+    width: 16px;
+    height: 2px;
+    background-color: #191614;
+    transition: all .3s ease-in-out;
+}
+
+.accordeon-ui label::after {
+    transform: rotate(90deg);
+}
+
+.accordeon-ui input[type="radio"]:checked~.accordeon-tag label::before,
+.accordeon-ui input[type="radio"]:checked~.accordeon-tag label::after {
+    transform: rotate(360deg);
+}
+
+.accordeon-ui .content {
+    display: grid;
+    grid-template-rows: 0fr;
+    transition: grid-template-rows 0.4s ease;
+    padding-bottom: 0;
+    transition: padding-bottom 0.3s ease;
+}
+
+.accordeon-ui .content>* {
+    overflow: hidden;
+}
+
+.accordeon-ui input[type="radio"]:checked~.content {
+    grid-template-rows: 1fr;
+    padding-bottom: 24px;
+}
+
+.motif-text {
+    display: flex;
+    flex: 1;
+    flex-direction: column;
+    gap: 24px;
+}
+
+.FAQ {
+    display: flex;
+    padding: 60px 80px;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    align-self: stretch;
+    border-radius: 32px 32px 0 0;
+    background-color: #251B14;
+    gap: 48px;
+}
+
+.FAQ .motif-accordeon {
+    display: flex;
+    align-items: flex-start;
+    align-self: stretch;
+    justify-content: center;
+    max-width: 1440px;
+    margin: 0 auto;
+}
+
+.FAQ .title {
+    display: flex;
+    align-items: center;
+    align-self: stretch;
+    text-align: center;
+}
+
+.FAQ .h2-fraunces,
+.FAQ .h2-poppins {
+    color: #F1EFEC;
+}
+
+.FAQ-title {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    flex: 1 0 0;
+}
+
+.FAQ .accordeon-ui {
+    display: flex;
+    flex-direction: column;
+    flex: 1 0 0;
+}
+
+.FAQ .accordeon-ui .tag {
+    background: none;
+    color: #F1EFEC;
+}
+
+.FAQ .accordeon-tag {
+    background-color: #251B14;
+}
+
+.FAQ .accordeon-ui label::before,
+.FAQ .accordeon-ui label::after {
+    right: 14px;
+    top: 55%;
+    background-color: #F1EFEC;
+}
+
+.FAQ p {
+    color: #F1EFEC;
+    letter-spacing: -0.56px;
+}
+
+.FAQ .p-medium-regular {
+    color: #F1EFEC;
+}
+
+.FAQ .section {
+    border-top: 1px solid #F1EFEC;
+    padding-top: 24px;
+}
+
+.illustration-title {
+    display: flex;
+    align-items: flex-start;
+    align-self: stretch;
+    height: 563px;
+    border-radius: 32px;
+    background: url(pen.png) lightgray 50% / cover no-repeat;
+    margin-top: 48px;
+}
+
+.tabs {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 24px;
+}
+
+.tabs input[type='radio'] {
+    display: none;
+}
+
+.tabs label {
+    display: inline-flex;
+    align-items: center;
+    padding: 12px 20px;
+    border-radius: 50px;
+    background: #F1EFEC;
+    border: 3px solid #F1EFEC;
+    font-family: "poppins", 'sans-serif';
+    font-weight: 600;
+    font-size: 0.9rem;
+    letter-spacing: -0.48px;
+    cursor: pointer;
+    transition: all 0.3s ease-in-out;
+}
+
+.tabs label::after {
+    content: none;
+}
+
+.tabs input[type='radio']:checked+label::after {
+    content: '';
+    width: 8px;
+    height: 8px;
+    margin-left: 8px;
+    aspect-ratio: 1 / 1;
+    border-radius: 999px;
+    background: #412E21;
+    animation: dotBounce 0.35s cubic-bezier(.34, 1.56, .64, 1);
+}
+
+@keyframes dotBounce {
+    0% {
+        transform: scale(0);
+        opacity: 0;
+    }
+
+    60% {
+        transform: scale(1.25);
+        opacity: 1;
+    }
+
+    100% {
+        transform: scale(1);
+    }
+}
+
+.tabs .tab {
+    width: 100%;
+    order: 1;
+    display: none;
+}
+
+.tabs input[type='radio']:checked+label+.tab {
+    display: block;
+}
+
+.tabs input[type='radio']:checked+label {
+    border-radius: 50px;
+    border: 3px solid #412E21;
+}
+
+.tab-profil-principal {
+    display: flex;
+    align-items: flex-start;
+    gap: 72px;
+    align-self: stretch;
+    padding-top: 24px;
+}
+
+.membre-description {
+    display: flex;
+    flex-direction: column;
+    gap: 32px;
+    flex: 1 0 0;
+    justify-content: center;
+    align-items: flex-start;
+    align-self: stretch;
+}
+
+.tab-profil-secondaire {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 48px;
+    padding-bottom: 48px;
+    padding-top: 100px;
+}
+
+.mes-experiences,
+.mes-coordonnees {
+    display: flex;
+    align-items: flex-start;
+    gap: 24px;
+    align-self: stretch;
+    flex: 1 0 0;
+    padding-top: 24px;
+}
+
+.mes-experiences h3,
+.mes-coordonnees h3 {
+    width: 388px;
+    flex-shrink: 0;
+}
+
+.mes-experiences-detail,
+.mes-coordonnees-detail {
+    display: flex;
+    flex-direction: column;
+    flex: 1 0 0;
+    align-items: flex-start;
+    align-self: stretch;
+}
+
+.mes-experiences-detail p,
+.mes-coordonnees-detail p {
+    align-self: stretch;
+    padding: 16px;
+    border-top: 1px solid rgba(37, 27, 20, 0.20);
+}
+
+.mes-experiences .last,
+.mes-coordonnees-detail .last {
+    border-bottom: 1px solid rgba(37, 27, 20, 0.20);
+}
+
+.mobile-menu {
+    margin-left: 0;
+}
+
+.footer {
+    background: #251B14;
+    padding: 20px 0;
+    border-top: 1px solid #E9E1D0;
+}
+
+.footer-maxwidth {
+    width: 100%;
+    max-width: 1440px;
+    margin: 0 auto;
+    display: flex;
+    align-items: flex-start;
+    gap: 48px;
+
+}
+
+.footer-logo {
+    display: flex;
+    align-items: center;
+    gap: 16px;
+    flex: 1 0 0;
+}
+
+.footer-poppins {
+    color: #FFF;
+    font-family: Poppins;
+    font-size: 1.5rem;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 100%;
+    /* 24px */
+    letter-spacing: -0.96px;
+}
+
+.footer-fraunces {
+    color: #FFF;
+    font-family: Fraunces;
+    font-size: 1.7rem;
+    font-style: italic;
+    font-weight: 600;
+    line-height: 100%;
+    letter-spacing: -0.96px;
+}
+
+.footer-content {
+    display: flex;
+    align-items: flex-start;
+    gap: 96px;
+    color: #FFF;
+}
+
+.footer-content-in {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 24px;
+}
+
+.footer p {
+    color: #FFF;
+}
+
+.footer-content-in a {
+    text-decoration: underline;
+    color: #FFF;
+    font-family: 'poppins', 'sans-serif';
+    font-weight: 500;
+    font-size: 0.9rem;
+    line-height: 160%;
+    letter-spacing: -0.56px;
+}
+
+
+@media screen and (max-width: 810px) {
+
+
+    .navbar {
+        padding: 30px 0;
+        background: rgba(241, 239, 236, 0.7);
+        backdrop-filter: blur(15px);
+    }
+
+    .nav-links {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100vh;
+        display: flex;
+        padding-left: 16px;
+        padding-top: 76px;
+        background: rgba(241, 239, 236, 1);
+        margin-left: 200%;
+        transition: all 0.3s ease;
+    }
+
+    .nav-links.mobile-menu {
+        margin-left: 0;
+    }
+
+    .nav-links ul {
+        display: flex;
+        flex-direction: column;
+        gap: 48px;
+    }
+
+    .navbar .material-symbols-outlined {
+        display: block;
+    }
+
+    .navbar .nav-links a {
+        font-size: 1.4em;
+    }
+
+    .navbar .logo {
+        position: absolute;
+        top: 20px;
+        left: 20px;
+    }
+
+    .top-section {
+        background: url(BG-Montgolfieres-Mobile.svg) #F4F3F1 50% 100% no-repeat;
+        background-size: 250%;
+    }
+
+
+    .content-section {
+        gap: 120px;
+    }
+
+    .h1-poppins-large {
+        font-size: 12vw;
+    }
+
+    .h1-fraunces-large {
+        font-size: 14vw;
+    }
+
+    .h1-poppins-small {
+        font-size: 12vw;
+    }
+
+    .h1-fraunces-small {
+        font-size: 15vw;
+        line-height: 60%;
+    }
+
+
+    .h2-poppins {
+        font-size: 2.2rem;
+    }
+
+    .h2-fraunces {
+        font-size: 2.55rem;
+    }
+
+    .h3-poppins-large {
+        font-size: 2.1rem;
+    }
+
+    .h3-fraunces-large {
+        font-size: 2.9rem;
+    }
+
+    .h3-fraunces-large-medium {
+        font-size: 2.4rem;
+    }
+
+    .p-medium-semibold,
+    .p-medium-regular {
+        font-size: 1.4rem;
+    }
+
+    .a-propos {
+        flex-direction: column;
+        padding: 0px 20px;
+        gap: 32px;
+    }
+
+    .title-h1 {
+        align-self: stretch;
+        flex-direction: column;
+    }
+
+    .equipe-tab,
+    .tarification,
+    .equipe {
+        padding: 0px 20px;
+        gap: 32px;
+    }
+
+    .equipe-body {
+        flex-direction: column;
+    }
+
+    .equipe .title {
+        text-align: center;
+    }
+
+
+    .equipe-title .color-lines {
+        padding-bottom: 8px;
+    }
+
+    .equipe .bouton-secondaire {
+        margin: auto;
+        width: 100%;
+    }
+
+    .membre-background {
+        padding: 0px;
+        gap: 48px;
+    }
+
+    .membre1,
+    .membre2 {
+        min-width: auto;
+        background-position: 60%;
+        background-size: cover;
+    }
+
+    .tab .membre1,
+    .tab .membre2 {
+        width: 100%;
+    }
+
+    .tab h3 {
+        font-size: 2rem;
+    }
+
+    .tab .h3-fraunces {
+        font-size: 2.5rem;
+    }
+
+    .tab .membre-background {
+        height: 250px;
+    }
+
+    .membre-background .tag {
+        margin: 20px;
+        gap: 64px;
+    }
+
+    .membre-background .membre-name h3 {
+        padding: 20px;
+    }
+
+    .membre-background .membre-name {
+        padding: 0px;
+        gap: 64px;
+    }
+
+    .membre-name .profil-description-coordonnees {
+        gap: 8px;
+        border-radius: 0px 0px 32px 32px;
+        padding: 16px 16px;
+        background: #251B14;
+    }
+
+    .membre-name .profil-description-coordonnees p {
+        color: #FFF;
+        font-family: 'poppins', 'sans-serif';
+    }
+
+    .procedure {
+        padding: 0px 20px;
+    }
+
+    .procedure-body {
+        height: auto;
+        display: flex;
+        flex-direction: column;
+        gap: 16px;
+    }
+
+    .procedure .color-lines {
+        padding-bottom: 8px;
+    }
+
+    .rendez-vous {
+        padding: 0px;
+    }
+
+    .rendez-vous-background {
+        border-radius: 0px;
+        padding-left: 8px;
+        padding-right: 8px;
+        gap: 24px;
+    }
+
+    .tarification {
+        padding: 0px 20px;
+        width: 100%;
+        box-sizing: border-box;
+    }
+
+    .tarification .color-lines {
+        padding-bottom: 8px;
+    }
+
+    .tarification-body {
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        align-items: stretch;
+    }
+
+    .tarif-sombre,
+    .tarif-clair {
+        width: auto;
+    }
+
+    .financement {
+        padding: 120px 20px;
+        flex-direction: column;
+    }
+
+    .financement-text {
+        padding: 0px;
+    }
+
+    .financement .color-lines {
+        padding-bottom: 8px;
+    }
+
+    .financement-body-detail {
+        flex-direction: column;
+        gap: 48px;
+    }
+
+    .fiancement-image img {
+        max-width: 100%;
+        height: auto;
+        display: block;
+    }
+
+    .carte {
+        padding: 0px 20px 48px 20px;
+        background: none;
+    }
+
+    .carte-infos {
+        padding: 0px;
+        gap: 48px;
+        border-radius: 0px;
+        background: none;
+        box-shadow: none;
+        align-self: stretch;
+    }
+
+    .title-section {
+        flex-direction: column;
+        padding: 120px 20px;
+        gap: 32px;
+    }
+
+    .title-section .title {
+        flex-direction: column;
+    }
+
+    .title-section .title p {
+        padding: 0px 0px;
+    }
+
+    .role-psychomotricien,
+    .motif-consultation {
+        flex-direction: column;
+        padding: 0px 20px 120px 20px;
+        gap: 8px;
+        flex-direction: column;
+    }
+
+    .role-psychomotricien-infos {
+        flex-direction: column;
+        gap: 16px;
+    }
+
+    .role-psychomotricien-image {
+        display: flex;
+        width: 100%;
+        height: 300px;
+        align-items: flex-start;
+    }
+
+    .role-psychomotricien-image img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        border-radius: 24px;
+    }
+
+    .motif-bebe,
+    .motif-adulte-personne-agee,
+    .motif-enfant-ado {
+        flex-direction: column;
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 16px;
+        align-self: stretch;
+        border-bottom: 1px solid #E9E1D0;
+        border-radius: 0px;
+        padding-bottom: 24px;
+        padding-top: 24px;
+    }
+
+    .motif-consultation-body {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 16px;
+        align-self: stretch;
+    }
+
+    .motif-title {
+        width: 100%;
+    }
+
+    .accordeon-tag {
+        padding-right: 40px;
+    }
+
+    .transport-detail {
+        flex-direction: column;
+        align-items: self-start;
+        gap: 4px;
+    }
+
+    .FAQ {
+        padding: 60px 20px;
+    }
+
+    .illustration-title {
+        display: flex;
+        width: 100%;
+        height: 140px;
+        align-items: flex-start;
+        margin-top: 0px;
+    }
+
+
+
+    .tab-profil,
+    .tab-profil-principal,
+    .mes-coordonnees,
+    .mes-experiences {
+        flex-direction: column;
+    }
+
+    .tabs {
+        width: 100%;
+
+    }
+
+
+    .mes-coordonnees h3,
+    .mes-experiences h3 {
+        margin: 0;
+        width: 100%;
+    }
+
+    .tab-profil-secondaire {
+        padding-top: 48px;
+        gap: 24px;
+    }
+
+    .tab-profil-secondaire p {
+        padding-left: 0px;
+    }
+
+    .footer {
+        padding: 48px 20px;
+    }
+
+    .footer-content,
+    .footer-maxwidth {
+        flex-direction: column;
+    }
+
+    .footer-content {
+        gap: 40px;
+    }
+
+    .footer-content-in {
+        gap: 16px;
+    }
+
+
+}
